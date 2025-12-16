@@ -8,12 +8,12 @@ import pandas as pd
 
 real_hotels = {
     "София": [
-        {"name": "Grand Hotel Sofia", "stars": 5, "price": 150, "link": "https://www.grandhotelsofia.bg/", "lat": 42.6870, "lon": 23.3163, "address": "pl. "Narodno sabranie" 1"},
-        {"name": "InterContinental Sofia", "stars": 5, "price": 140, "link": "https://sofia.intercontinental.com/", "lat": 42.6881, "lon": 23.3154, "address": "bul. "Narodno sabranie" 4"},
+        {"name": "Grand Hotel Sofia", "stars": 5, "price": 150, "link": "https://www.grandhotelsofia.bg/", "lat": 42.6870, "lon": 23.3163, "address": 'pl. "Narodno sabranie" 1'},
+        {"name": "InterContinental Sofia", "stars": 5, "price": 140, "link": "https://sofia.intercontinental.com/", "lat": 42.6881, "lon": 23.3154, "address": 'bul. "Narodno sabranie" 4'},
         {"name": "Hotel Marinela", "stars": 5, "price": 130, "link": "https://www.marinela.bg/", "lat": 42.6658, "lon": 23.2841, "address": "100 James Bourchier Blvd"},
-        {"name": "Sofia Balkan Palace", "stars": 4, "price": 90, "link": "https://www.balkanpalaces.bg/", "lat": 42.6979, "lon": 23.3230, "address": "pl. "Sveta Nedelya" 5"},
-        {"name": "Rosslyn Central Park Hotel", "stars": 4, "price": 75, "link": "https://rosslynhotels.com/", "lat": 42.6745, "lon": 23.3038, "address": "bul. "Maria Luiza" 100"},
-        {"name": "Art 'Otel", "stars": 3, "price": 60, "link": "https://www.artotel.bg/", "lat": 42.6942, "lon": 23.3267, "address": "ul. "Graf Ignatiev" 5"}
+        {"name": "Sofia Balkan Palace", "stars": 4, "price": 90, "link": "https://www.balkanpalaces.bg/", "lat": 42.6979, "lon": 23.3230, "address": 'pl. "Sveta Nedelya" 5'},
+        {"name": "Rosslyn Central Park Hotel", "stars": 4, "price": 75, "link": "https://rosslynhotels.com/", "lat": 42.6745, "lon": 23.3038, "address": 'bul. "Maria Luiza" 100'},
+        {"name": "Art 'Otel", "stars": 3, "price": 60, "link": "https://www.artotel.bg/", "lat": 42.6942, "lon": 23.3267, "address": 'ul. "Graf Ignatiev" 5'}
     ],
     "Белград": [
         {"name": "Hyatt Regency Belgrade", "stars": 5, "price": 160, "link": "https://www.hyatt.com/", "lat": 44.8075, "lon": 20.4414, "address": "Milentija Popovića 5"},
@@ -35,6 +35,30 @@ real_hotels = {
         {"name": "The Charles Hotel", "stars": 5, "price": 300, "link": "https://www.roccofortehotels.com/", "lat": 48.1489, "lon": 11.5700, "address": "Sophienstraße 28"},
         {"name": "Hotel München Palace", "stars": 4, "price": 180, "link": "https://www.muenchen-palace.de/", "lat": 48.1484, "lon": 11.5853, "address": "Trogerstraße 21"},
         {"name": "Hotel Brack", "stars": 3, "price": 110, "link": "https://www.hotel-brack.de/", "lat": 48.1388, "lon": 11.5692, "address": "Lindwurmstraße 153"}
+    ],
+    "Букурещ": [
+        {"name": "Athénée Palace Hilton", "stars": 5, "price": 180, "link": "https://www.hilton.com/", "lat": 44.4425, "lon": 26.0958, "address": "Strada Episcopiei 1-3"},
+        {"name": "InterContinental Bucharest", "stars": 5, "price": 170, "link": "https://bucharest.intercontinental.com/", "lat": 44.4492, "lon": 26.0975, "address": "Bulevardul Nicolae Bălcescu 4"},
+        {"name": "Radisson Blu Hotel", "stars": 4, "price": 120, "link": "https://www.radissonhotels.com/", "lat": 44.4300, "lon": 26.0972, "address": "Calea Victoriei 63-81"},
+        {"name": "Hotel Capitol", "stars": 3, "price": 70, "link": "http://www.hotelcapitol.ro/", "lat": 44.4306, "lon": 26.1036, "address": "Calea Victoriei 29"}
+    ],
+    "Будапеща": [
+        {"name": "Four Seasons Gresham Palace", "stars": 5, "price": 350, "link": "https://www.fourseasons.com/", "lat": 47.4994, "lon": 19.0475, "address": "Széchenyi István tér 5-6"},
+        {"name": "Kempinski Hotel Corvinus", "stars": 5, "price": 280, "link": "https://www.kempinski.com/", "lat": 47.5000, "lon": 19.0553, "address": "Erzsébet tér 7-8"},
+        {"name": "InterContinental Budapest", "stars": 5, "price": 200, "link": "https://budapest.intercontinental.com/", "lat": 47.4981, "lon": 19.0522, "address": "Apáczai Csere János u. 12-14"},
+        {"name": "Hotel Palazzo Zichy", "stars": 4, "price": 130, "link": "https://www.hotel-palazzo-zichy.hu/", "lat": 47.4900, "lon": 19.0708, "address": "Lőrinc pap tér 2"}
+    ],
+    "Залцбург": [
+        {"name": "Hotel Goldener Hirsch", "stars": 5, "price": 320, "link": "https://www.goldenerhirschsalzburg.com/", "lat": 47.7989, "lon": 13.0464, "address": "Getreidegasse 37"},
+        {"name": "Hotel Sacher Salzburg", "stars": 5, "price": 300, "link": "https://www.sacher.com/", "lat": 47.8039, "lon": 13.0436, "address": "Schwarzstraße 5-7"},
+        {"name": "Hotel Bristol Salzburg", "stars": 4, "price": 160, "link": "https://www.bristol-salzburg.at/", "lat": 47.8031, "lon": 13.0400, "address": "Makartplatz 4"},
+        {"name": "Hotel Wolf", "stars": 3, "price": 100, "link": "https://www.hotelwolf.com/", "lat": 47.7992, "lon": 13.0497, "address": "Kaigasse 7"}
+    ],
+    "Цюрих": [
+        {"name": "Baur au Lac", "stars": 5, "price": 500, "link": "https://www.bauraulac.ch/", "lat": 47.3675, "lon": 8.5417, "address": "Talstrasse 1"},
+        {"name": "Hotel Widder", "stars": 5, "price": 450, "link": "https://www.widderhotel.ch/", "lat": 47.3725, "lon": 8.5397, "address": "Rennweg 7"},
+        {"name": "Park Hyatt Zurich", "stars": 5, "price": 400, "link": "https://www.hyatt.com/", "lat": 47.3706, "lon": 8.5369, "address": "Beethovenstrasse 21"},
+        {"name": "Hotel St. Gotthard", "stars": 4, "price": 220, "link": "https://www.hotelstgotthard.ch/", "lat": 47.3714, "lon": 8.5397, "address": "Bahnhofstrasse 87"}
     ]
 }
 
@@ -209,7 +233,8 @@ if st.button("Планирай пътуването 🧭", type="primary"):
         with col1:
             st.write("### 🛣️ Градове по маршрута:")
             for i, city in enumerate(cities, 1):
-                st.write(f"{i}. **{city}** - {city_info[city]['sight']}")
+                if city in city_info:
+                    st.write(f"{i}. **{city}** - {city_info[city]['sight']}")
         
         with col2:
             st.write("### 📏 Информация:")
@@ -246,23 +271,34 @@ if st.button("Планирай пътуването 🧭", type="primary"):
             
             if not available_hotels:
                 st.warning(f"Няма налични хотели в {city} с минимум {min_stars} звезди")
+                # Add default hotel cost for calculation
+                default_cost = 100 * days
+                total_hotel_cost += default_cost
+                selected_hotels.append({
+                    "city": city,
+                    "hotel": "Няма налични хотели",
+                    "cost": default_cost,
+                    "stars": min_stars
+                })
                 continue
             
             # Display hotels in columns
-            cols = st.columns(len(available_hotels))
+            cols = st.columns(min(3, len(available_hotels)))
             
-            for idx, hotel in enumerate(available_hotels):
-                with cols[idx]:
-                    st.markdown(f"**{hotel['name']}**")
-                    st.write(f"⭐ {'★' * hotel['stars']}")
-                    st.write(f"💰 {hotel['price']} лв/нощ")
-                    
-                    # Button to redirect to hotel website
-                    if st.button(f"Резервирай", key=f"btn_{city}_{idx}"):
-                        st.markdown(f'<meta http-equiv="refresh" content="0; url={hotel["link"]}">', unsafe_allow_html=True)
-                        st.success(f"Пренасочване към {hotel['name']}...")
-                    
-                    st.write("---")
+            for idx, hotel in enumerate(available_hotels[:3]):  # Show max 3 hotels per city
+                if idx < len(cols):
+                    with cols[idx]:
+                        st.markdown(f"**{hotel['name']}**")
+                        st.write(f"⭐ {'★' * hotel['stars']}")
+                        st.write(f"💰 {hotel['price']} лв/нощ")
+                        st.write(f"📍 {hotel['address']}")
+                        
+                        # Button to redirect to hotel website
+                        if st.button(f"Резервирай", key=f"btn_{city}_{idx}"):
+                            st.markdown(f'<meta http-equiv="refresh" content="0; url={hotel["link"]}">', unsafe_allow_html=True)
+                            st.success(f"Пренасочване към {hotel['name']}...")
+                        
+                        st.write("---")
             
             # Calculate hotel cost (using first available hotel)
             hotel_cost = available_hotels[0]['price'] * days
@@ -278,8 +314,8 @@ if st.button("Планирай пътуването 🧭", type="primary"):
         
         # Display selected hotels summary
         st.subheader("📋 Избрани хотели")
-        hotel_df = pd.DataFrame(selected_hotels)
-        if not hotel_df.empty:
+        if selected_hotels:
+            hotel_df = pd.DataFrame(selected_hotels)
             st.dataframe(
                 hotel_df,
                 column_config={
@@ -297,12 +333,19 @@ if st.button("Планирай пътуването 🧭", type="primary"):
         # Calculate costs
         total_distance = DISTANCE_BETWEEN_CITIES * (len(cities) - 1)
         transport_cost = transport.travel_cost(total_distance)
-        total_food_cost = sum(city_info[city]['food'][1] * days for city in cities)
-        total_hotel_cost_calc = sum(
-            filter_hotels_by_stars(city, min_stars)[0]['price'] * days 
-            if filter_hotels_by_stars(city, min_stars) else 100 * days 
-            for city in cities
-        )
+        total_food_cost = 0
+        total_hotel_cost_calc = 0
+        
+        for city in cities:
+            if city in city_info:
+                total_food_cost += city_info[city]['food'][1] * days
+            
+            city_hotels = filter_hotels_by_stars(city, min_stars)
+            if city_hotels:
+                total_hotel_cost_calc += city_hotels[0]['price'] * days
+            else:
+                total_hotel_cost_calc += 100 * days  # Default price
+        
         total_cost = transport_cost + total_food_cost + total_hotel_cost_calc
         
         # Display costs in columns
@@ -319,19 +362,22 @@ if st.button("Планирай пътуването 🧭", type="primary"):
             st.metric(
                 label="Храна",
                 value=f"{total_food_cost:.2f} лв",
-                delta=f"{(total_food_cost/days):.1f} лв/ден"
+                delta=f"{(total_food_cost/days):.1f} лв/ден" if days > 0 else "0 лв/ден"
             )
         
         with col3:
             st.metric(
                 label="Хотели",
                 value=f"{total_hotel_cost_calc:.2f} лв",
-                delta=f"{(total_hotel_cost_calc/days):.1f} лв/ден"
+                delta=f"{(total_hotel_cost_calc/days):.1f} лв/ден" if days > 0 else "0 лв/ден"
             )
         
         # Progress bar for budget
         st.subheader("📊 Бюджетен анализ")
-        budget_percentage = (total_cost / budget) * 100
+        if budget > 0:
+            budget_percentage = (total_cost / budget) * 100
+        else:
+            budget_percentage = 100
         
         if budget_percentage > 100:
             st.error(f"Превишение с {budget_percentage-100:.1f}%")
@@ -377,7 +423,7 @@ if st.button("Планирай пътуването 🧭", type="primary"):
             Общи разходи: {total_cost:.2f} лв
             
             ГРАДОВЕ:
-            {chr(10).join(f'- {city}: {city_info[city]["sight"]}' for city in cities)}
+            {chr(10).join(f'- {city}: {city_info.get(city, {}).get("sight", "Няма информация")}' for city in cities)}
             
             ХОТЕЛИ (минимум {min_stars} звезди):
             {chr(10).join(f'- {city}: {filter_hotels_by_stars(city, min_stars)[0]["name"] if filter_hotels_by_stars(city, min_stars) else "Няма налични"}' for city in cities)}
